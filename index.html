@@ -6,25 +6,25 @@
     <title>actividad2</title>
     <style>
 html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     }
 
     body {
-      background: linear-gradient(-45deg, #4d4c4c, #f8f5f4, #504e4e, #47474d);
-      background-size: 400% 400%;
-      animation: moverFondo 20s ease infinite;
+    background: linear-gradient(-45deg, #4d4c4c, #f8f5f4, #504e4e, #47474d);
+    background-size: 400% 400%;
+    animation: moverFondo 20s ease infinite;
     }
 
     @keyframes moverFondo {
-      0% {
+    0% {
         background-position: 0% 50%;
-      }
-      50% {
+    }
+    50% {
         background-position: 100% 50%;
-      }
-      100% {
+    }
+    100% {
         background-position: 0% 50%;}}
     
         nav { 
@@ -44,14 +44,19 @@ html, body {
         .menu li {
             color: white;
             background-color: rgba(227, 236, 236, 0.534);
-            margin-left: 9%;
+            margin-left: 6%;
             border: solid rgb(22, 9, 9) 1px;
             padding-top: 0.5%;
             padding-bottom: 0.5%;
             padding-right: 2.5%;
             padding-left: 2.5%;
-
+            transition: transform 0.4s ease;
         }
+        .menu li:hover{
+        transform: scale(1.2);
+        }
+
+
         .menu li a {
             font-size: 20px;
             display: block;
@@ -91,7 +96,6 @@ html, body {
             }
         .al-lado {
             display: flex;
-  
         }
         .otra-foto img {
             width: 400px;
@@ -111,9 +115,10 @@ html, body {
     <header>
         <nav>
             <ul class="menu">
+                <li><a href="index.html">Introduccion</a></li>
                 <li><a href="#"> productos</a></li>
                 <li><a href="#">articulos</a></li>
-                <li><a href=""> contacto</a></li>
+                <li><a href="contacto.html"> contacto</a></li>
                 <li><a href="">perfil personal</a></li>
                 <li><a href="">galeria</a></li>
             </ul>

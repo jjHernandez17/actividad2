@@ -1,114 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        nav { 
-            text-align: center;
-        }
-        .menu {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            background-color: rgb(88, 83, 83);
-            padding: 0.3% 3%;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Document</title>
+<style>
 
-            
-        }
+    body {
+    margin: 0;
+    padding: 0;
+    animation: fondoAnimado 15s ease infinite;
+    background: linear-gradient(-45deg, #e0f7fa, #c1d9ff, #d0f0c0, #f1f8e9);
+    background-size: 400% 400%;
+    font-family: Arial, sans-serif;
+}
 
-        .menu li {
-            color: white;
-            background-color: rgba(227, 236, 236, 0.534);
-            margin-left: 9%;
-            border: solid rgb(22, 9, 9) 1px;
-            padding-top: 0.5%;
-            padding-bottom: 0.5%;
-            padding-right: 2.5%;
-            padding-left: 2.5%;
+@keyframes fondoAnimado {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
 
-        }
-        .menu li a {
-            font-size: 20px;
-            display: block;
-            text-decoration: none;
-            color: aliceblue;
-            
-        }
-        .contacto {
-            margin-top: 5%;
-            margin-left: 43%;
-        }
-        .contacto li {
-            list-style: none;
-        }
-        .contacto li img{
-            height: 60px;
-            width: 60px;
+    nav {
+    text-align: center;
+    }
 
-        }
-       
-         h1 { 
-            margin-top: 5%;
-            text-align: center;
-        }
+    .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: rgb(88, 83, 83);
+    padding: 0.3% 3%;
+    }
 
-       
-        /* .WhatsApp img{
+    .menu li {
+    color: white;
+    background-color: rgba(227, 236, 236, 0.534);
+    margin-left: 6%;
+    border: solid rgb(22, 9, 9) 1px;
+    padding: 0.5% 2.5%;
+    transition: transform 0.4s ease;
+}
 
-            height: 60px;
-            width: 60;
-            margin-left: 30%;
+    .menu li:hover{
+    transform: scale(1.2);
 
-        }
-        .WhatsApp a{
-            font-size: 19px;
-            margin-top: 1%;
-            margin-left: 2%;
-            font-style: none;
-            font-style: oblique ;
-            text-decoration: none;
-        }
-        h1 { 
-            margin-top: 5%;
-            text-align: center;
-        }
-        .WhatsApp{
-            display: flex;
-            margin-left: 15%;
-            margin-top: 4%;
-        } */
+    }
 
-    </style>
+    .menu li a {
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    }
 
+    h1 {
+    margin-top: 4%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    }
+
+    .alinear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f7fa;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+    margin: 4% auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .contacto {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    }
+
+    .contacto li img {
+    transition: transform 0.4s ease;
+    }
+
+    .contacto li img:hover {
+    transform: scale(1.2);
+    }
+    .WhatsApp img{
+        width: 90px;
+        height: 90px;
+
+    }
+    .instagram img {
+        width: 130px;
+        height: 80px;
+    }
+
+
+    
+
+</style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#"> productos</a></li>
-                <li><a href="#">articulos</a></li>
-                <li><a href=""> contacto</a></li>
-                <li><a href="">perfil personal</a></li>
-                <li><a href="">galeria</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>COMUNIQUEMONOS:</h1>
-        <!-- <div class="WhatsApp">
-            <img src="WhatsApp.svg.webp" alt="WhatsApp">
-            <a target="_blank" href="https://w.app/ozg3bl">hablanos por WhatsApp</a>
-        </div> -->
-        <ul class="contacto">
-            <li class="WhatsApp"><img  src="WhatsApp.svg.webp" alt=""> <a href="https://w.app/ozg3bl">WhatsApp</a></li>
-            <li></li>
-            <li></li>
-
-        </ul>
-    </main>
-    
+<header>
+    <nav>
+    <ul class="menu">
+        <li><a href="index.html">Introduccion</a></li>
+        <li><a href="#"> productos</a></li>
+        <li><a href="#">articulos</a></li>
+        <li><a href=""> contacto</a></li>
+        <li><a href="">perfil personal</a></li>
+        <li><a href="">galeria</a></li>
+    </ul>
+    </nav>
+</header>
+<main>
+    <h1>COMUNIQUÉMONOS:</h1>
+    <div class="alinear">
+    <ul class="contacto">
+        <li class="WhatsApp">
+        <a target="_blank" href="https://w.app/ozg3bl"><img src="WhatsApp.svg.webp" alt="WhatsApp"></a>
+        </li>
+        <li class="instagram">
+        <a target="_blank" href="https://www.instagram.com/juanjoh17_/"><img src="Instagram-Logo-2016.png" alt="Instagram"></a>
+        </li>
+    </ul>
+    </div>
+</main>
 </body>
 </html>
