@@ -6,8 +6,24 @@
     <title>productos</title>
     <style>
         body {
+            background-color: rgb(143, 143, 143);
             font-style:italic ;
-            height: 3000px;
+            height: 1500px;
+            background: linear-gradient(30deg, #767777, #eaebec, #838383, #777777);
+            background-size: 400% 400%;
+            animation: fondoAnimado 8s ease infinite;
+        }
+
+        @keyframes fondoAnimado {
+            0% {
+            background-position: 0% 50%;
+            }
+            50% {
+            background-position: 100% 50%;
+            }
+            100% {
+            background-position: 0% 50%;
+            }
         }
         .menu {
             list-style: none;
@@ -43,13 +59,21 @@
             color: aliceblue;
         }
         .producto {
+            box-shadow: 5px 5px 30px #333;
+
+            background-color: rgba(255, 255, 255, 0.521);
             height: 750px;
             width: 280px;
             border: solid black 2px;
             padding: 22px;
             margin-left: 125px;
-            margin-top: 3%;
+            margin-top: 55px;
             margin-bottom: 0;
+            transition: transform 0.4s ease;
+        }
+
+        .producto:hover{
+            transform: scale(1.2);
         }
         .bmw-120i {
             height: 200px;
@@ -58,7 +82,8 @@
         }
         h1 {
             text-align: center;
-            margin-top: 4%;
+            margin-top: 0;
+            padding: 10px;
         }
 
         button {
@@ -72,10 +97,12 @@
             
         }
         .titulo {
-            background-color: rgb(247, 162, 4);
+            background-color: rgb(255, 255, 255);
             width: 1820px;
-            
-            
+            height: 50px;
+            margin-top: 40px;
+            border: solid black 2px;
+
         }
         h3 {
             color: green;
@@ -86,14 +113,20 @@
             }
         
         .producto-2 {
+            box-shadow: 5px 5px 30px #333;
+            background-color: rgba(255, 255, 255, 0.521);
             height: 750px;
             width: 15%;
             border: solid black 2px;
             padding: 22px;
             margin-left: 125px;
-            margin-top: 3%;
+            margin-top: 55px;
             margin-bottom: 0;
+            transition: transform 0.4s ease;
+        }
 
+        .producto-2:hover{
+            transform: scale(1.2);
         }
         .a200 {
             height: 200px;
@@ -104,13 +137,19 @@
             margin-top: 80px;
         }
         .producto-3 {
+            box-shadow: 5px 5px 30px #333;
+            background-color: rgba(255, 255, 255, 0.521);
             height: 750px;
             width: 15%;
             border: solid black 2px;
             padding: 22px;
             margin-left: 125px;
-            margin-top: 3%;
+            margin-top: 55px;
             margin-bottom: 0;
+            transition: transform 0.4s ease;
+        }
+        .producto-3:hover{
+            transform: scale(1.2);
         }
         .urus {
             height: 200px;
@@ -127,13 +166,20 @@
 
 
         .producto-4 {
+            box-shadow: 5px 5px 30px #333;
+            background-color: rgba(255, 255, 255, 0.521);
             height: 750px;
             width: 15%;
             border: solid black 2px;
             padding: 22px;
             margin-left: 125px;
-            margin-top: 3%;
+            margin-top: 55px;
             margin-bottom: 0;
+            transition: transform 0.4s ease;
+            
+        }
+        .producto-4:hover{
+            transform: scale(1.2);
         }
         
         .comprar-can {
@@ -158,8 +204,8 @@
         <main>
             <div class="titulo">
             <h1>JUAN TE VENDE</h1>
-                
-                </div>
+            </div>
+
             <div class="venta">
                 
                 <div class="producto">
