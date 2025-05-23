@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil personal</title>
+
+    <style>
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background-color: rgb(88, 83, 83);
+            padding: 0.3% 3%;
+
+            
+        }
+
+        .menu li {
+            color: white;
+            background-color: rgba(227, 236, 236, 0.534);
+            margin-left: 6%;
+            border: solid rgb(22, 9, 9) 1px;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-right: 2.5%;
+            padding-left: 2.5%;
+            transition: transform 0.4s ease;
+        }
+        .menu li:hover{
+        transform: scale(1.2);
+        }
+
+
+        .menu li a {
+            font-size: 20px;
+            display: block;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .imagen-perfil-p img
+        {
+            margin-top: 130px;
+            margin-left: 130px;
+            height: 300px ;
+            width: 220px ;
+            border-radius: 100%;
+            border: solid;
+            box-shadow: 5px 5px 50px #b8b7b7;
+
+
+        }
+
+        .cuadro-info {
+            background-color: #796b6b;
+            margin-left: 240px;
+            margin-top: 100px;
+            width: 1400px ;
+            height:940px;
+            border-radius: 3%;
+            box-shadow: 5px 5px 60px #333;
+            background: linear-gradient(30deg, #767777, #eaebec, #838383, #777777);
+            background-size: 400% 400%;
+            animation: fondoAnimado 17s ease infinite;
+        }
+        @keyframes fondoAnimado {
+            0% {
+            background-position: 0% 50%;
+            }
+            50% {
+            background-position: 100% 50%;
+            }
+            100% {
+            background-position: 0% 50%;
+            }
+        }
+
+        .poner-lado {
+            display: flex;
+        }
+
+
+        h1 {
+            font-style: italic;
+            margin-top: 250px;
+            margin-left: 120px;
+            text-shadow: solid white 30px;
+            text-shadow: 1px 0px 0px rgb(250, 250, 250), 0px 1px 0px rgb(255, 255, 255), -1px 0px 0px, 0px -1px 0px rgb(255, 255, 255);
+        }
+        .mi-info {
+            display: flex;
+        }
+
+        .edad dd {
+            margin-left: 0px;
+            margin-top: 10px;
+
+        }
+        .estatura dd {
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        .lista-info {
+            margin-top: 30px;
+            margin-left: 100px;
+            font-size: 20px;
+        }
+        .fecha {
+            margin-left: 110px;
+        }
+        .fecha dd
+        {
+            margin-top: 10px;
+        }
+
+        .edad {
+            margin-left: 0px;
+            margin-right: 140px;
+        }
+        .descripcion {
+            width: 500px ;
+            text-align: center;
+            margin-left: 80px;
+            margin-top: 80px;
+
+        }
+
+        .desenlace h2 {
+            font-style: italic;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color: white ;
+
+        }
+        .des-hab { 
+            display: flex;
+        }
+
+        .habilidades {
+            margin-left: 200px;
+        }
+        .tit-habilidades {
+            margin-left: 300px;
+            margin-top: 80px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+     <nav>
+        <ul class="menu">
+            <li><a href="index.html">Introduccion</a></li>
+            <li><a href="productos.html"> productos</a></li>
+            <li><a href="#">articulos</a></li>
+            <li><a href="contacto.html"> contacto</a></li>
+            <li><a href="">perfil personal</a></li>
+            <li><a href="">galeria</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <main class="cuadro-info">
+        <div class="poner-lado">
+
+            <figure class="imagen-perfil-p">
+                <img src="img_perfil.png" alt="foto perfil">
+            </figure>
+            <div>
+                <h1>JUAN JOSE HERNANDEZ VARGAS</h1>
+                <section class="lista-info">
+                    <dl class="poner-lado">
+                        <div class="edad">
+                        <b><dt>EDAD</dt></b>
+                        <dd>20 años</dd>
+                        </div>
+
+                        <div class="estatura">
+                        <b><dt>ESTATURA</dt></b>
+                        <dd>1.72</dd>
+                        </div>
+
+                        <div class="fecha">
+                        <b><dt>FECHA NACIMIENTO</dt></b>
+                        <dd>17/08/2004</dd>
+                        </div>
+                    </dl>
+                </section>
+            </div>                
+        </div>
+        <section class="desenlace">
+            
+            <h2>DESCRIPCION</h2>
+        </section>
+
+            <section class="des-hab">
+                <section class="descripcion">
+                    <p>Hola mi nombre es juan jose, tengo 20 años, me gustan los videojuegos, la ropa, salir a caminar con mi perro y compartir con mi familia y amigos. estudio ingenieria informática en la universidad de envigado y entreno desarrollo de software en una academia llamada RIWI, vivo con mis padres, soy una persona amable, cordial y respetuosa. siempre me ha gustado el tema de desarrollo de software, y me gusta hacer y aprender mis cosas independientemente</p>
+                </section>
+                <div>
+                    <h2 class="tit-habilidades">HABILIDADES</h2>
+                    <ul class="habilidades">
+                        <li>CREATIVIDAD</li>
+                        <li>LIDERAZGO</li>
+                        <li>BUENA LOGICA</li>
+                        <li>ANALISTA</li>
+                    </ul>
+                </div>
+            </section>
+                
+            
+        </section>
+
+        
+    </main>
+    
+</body>
+</html>
